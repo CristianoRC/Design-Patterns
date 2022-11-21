@@ -16,9 +16,14 @@ Podemos dividir os Design Patterns em três conjuntos: Criacionais, Estruturais 
 
 A grande ideia aqui é abstrair e facilitar o processo de criação de objetos, a criação de uma nova instância, abstraindo e facilitando o processo de instanciar objetos complexos. E o mais legal é que essa categoria de padrões pode trabalhar com configuração statica(hard coded), ou configurações dinâmicas, buscando dados para se configurar em um banco, um arquivo...
 
+[Exemplos de código 🗂️](./1-Criasionais/)
+
 #### Singleton
 
-Vamos iniciar com um dos mais controversos
+Vamos iniciar com um dos mais controversos, ele pode nos dar muitas dores de cabeça para situações onde nosso código roda em mais de uma thread, e também em casos de testes de unidade, pois acaba sendo muito difícil de colocar um duble de teste em seu lugar.
+
+Na prática, a sua ideia é garantir que exista apenas uma instância do objeto em toda sua aplicação. É muito prático em situações onde todos os usuários de uma classe precisam usar das mesmas informações.
+
 #### Factory Method
 
 #### Abstract Factory
@@ -31,4 +36,8 @@ Vamos iniciar com um dos mais controversos
 
 ### Estruturais
 
+[Exemplos de código 🗂️](./2-Estruturais/)
+
 ### Comportamentais
+
+[Exemplos de código 🗂️](./3-Comportamentais/)
