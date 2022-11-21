@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,rider,csharp,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,rider,csharp,node
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,rider,csharp,node,idea
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudio,visualstudiocode,rider,csharp,node,idea
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -398,6 +398,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+#!! ERROR: idea is undefined. Use list command to see defined gitignore types !!#
 
 ### Node ###
 # Logs
@@ -810,4 +812,4 @@ fabric.properties
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,rider,csharp,node
+# End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,rider,csharp,node,idea
