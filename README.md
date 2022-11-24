@@ -36,6 +36,11 @@ Vamos para o nosso exemplo, onde dependendo da regra que o usuário possúi, as 
 
 Já entendemos o que é uma fábrica quando falamos do Factory Method, e o Abstract Factory também não está foge muito da disso, a ideia é ser uma fábrica não apenas de um tipo de classe, mas sim de um conjunto; Em muitos lugares você pode ler algo falando que é uma fábrica de fábricas, isso não está 100% errado, mas, na prática, ela não se restringe conceitualmente somente a isso.
 
+Vamos para o nosso exemplo de um sistema de relatórios de compras feitas, que hoje temos dois tipos, a geração dos relatórios HTML e em PDF, são os mesmos dados de entrada, mas o que muda é como eles são apresentados, e importante, temos apenas duas regras que se aplicam independente do tipo do arquivo, quando não informações na lista de compras, o relatório vai ter informações diferentes; Na prática, teremos um factory para o tipo CSV, um factory para o tipo PDF, e um factory que vai fazer o uso dos dois anteriores, que vai ser o nosso abstract factory, da uma olhada no desenho.
+
+Exemplo temporário: https://miro.medium.com/max/909/1*7P_GB6DU_ipkj24mIkbEFg.png
+No lugar do ticket vai ser a nossa classe e/ou contrato de um relatório, nome, extensão e bytes...
+
 ### Builder
 
 ### Prototype
