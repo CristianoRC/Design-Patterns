@@ -34,7 +34,7 @@ Vamos para o nosso exemplo, onde dependendo da regra que o usuário possúi, as 
 
 ### Abstract Factory
 
-Já entendemos o que é uma fábrica quando falamos do Factory Method, e o Abstract Factory também não está foge muito da ideia.
+Já entendemos o que é uma fábrica quando falamos do Factory Method, e o Abstract Factory também não está foge muito da disso, a ideia é ser uma fábrica não apenas de um tipo de classe, mas sim de um conjunto; Em muitos lugares você pode ler algo falando que é uma fábrica de fábricas, isso não está 100% errado, mas, na prática, ela não se restringe conceitualmente somente a isso.
 
 ### Builder
 
