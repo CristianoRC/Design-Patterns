@@ -26,13 +26,15 @@ Na prática, a sua ideia é garantir que exista apenas uma instância do objeto 
 
 ### Factory Method
 
-Esse é um padrão muito usado para a abstrair a o processo de instanciar um conjunto de classes que implementam o mesmo contrato. Ná pratica, você tem uma fábrica que recebe parâmetros e sempre retorna uma instância de uma class que implementa o contrato.
+Esse é um padrão muito usado para a abstrair o processo de instanciar um conjunto de classes que implementam o mesmo contrato. Ná pratica, você tem uma fábrica que recebe parâmetros e sempre retorna uma instância de uma class que implementa o contrato.
 
-Vamos para o nosso exemplo, onde dependendo da regra que o usuário possúi, as taxa que ele vai pagar pode mudar. A gente tem a opção em tudo que é lugar pegar a config desse usuário e instânciar a classe com as suas regras, ou a gente pode centralizar isso em uma fábrica que retorna classes que sabem fazer esse cálculo de acordo com a regra passada.
+Vamos para o nosso exemplo, onde dependendo da regra que o usuário possúi, as taxas que ele vai pagar pode mudar. A gente tem a opção em tudo que é lugar pegar a config desse usuário e instanciar a classe com as suas regras, ou a gente pode centralizar isso em uma fábrica que retorna classes que sabem fazer esse cálculo conforme com a regra passada.
 
 <img src="./images/factory-method.png" width="600px"/>
 
 ### Abstract Factory
+
+Já entendemos o que é uma fábrica quando falamos do Factory Method, e o Abstract Factory também não está foge muito da ideia.
 
 ### Builder
 
