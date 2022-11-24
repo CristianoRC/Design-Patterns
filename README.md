@@ -30,7 +30,7 @@ Esse é um padrão muito usado para a abstrair a o processo de instanciar um con
 
 Vamos para o nosso exemplo, onde dependendo da regra que o usuário possúi, as taxa que ele vai pagar pode mudar. A gente tem a opção em tudo que é lugar pegar a config desse usuário e instânciar a classe com as suas regras, ou a gente pode centralizar isso em uma fábrica que retorna classes que sabem fazer esse cálculo de acordo com a regra passada.
 
-<img src="./images/factory-method.svg" width="600px"/>
+<img src="./images/factory-method.png" width="600px"/>
 
 ### Abstract Factory
 
