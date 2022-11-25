@@ -38,8 +38,7 @@ Já entendemos o que é uma fábrica quando falamos do Factory Method, e o Abstr
 
 Vamos para o nosso exemplo de um sistema de relatórios de compras feitas, que hoje temos dois tipos, a geração dos relatórios HTML e em CSV, são os mesmos dados de entrada, mas o que muda é como eles são apresentados, e importante, temos apenas duas regras que se aplicam independente do tipo do arquivo, quando não informações na lista de compras, o relatório vai ter informações diferentes; Na prática, teremos um factory para o tipo CSV, um factory para o tipo HTML, e um factory que vai fazer o uso dos dois anteriores, que vai ser o nosso abstract factory, da uma olhada no desenho.
 
-Exemplo temporário: https://miro.medium.com/max/909/1*7P_GB6DU_ipkj24mIkbEFg.png
-No lugar do ticket vai ser a nossa classe e/ou contrato de um relatório, nome, extensão e conteúdo...
+<img src="./images/abstract-factory.png" width="600px"/>
 
 ### Builder
 
