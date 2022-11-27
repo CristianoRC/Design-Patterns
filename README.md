@@ -16,6 +16,8 @@ Podemos dividir os Design Patterns em três conjuntos: Criacionais, Estruturais 
 
 A grande ideia aqui é abstrair e facilitar o processo de criação de objetos, a criação de uma nova instância, abstraindo e facilitando o processo de instanciar objetos complexos. E o mais legal é que essa categoria de padrões pode trabalhar com configuração statica(hard coded), ou configurações dinâmicas, buscando dados para se configurar em um banco, um arquivo...
 
+Importante, cada vez menos você vai ver essa categoria, pois em sua grande parte está sendo subsititúida por containers de injeção de dependência.
+
 [Exemplos de código 🗂️](./1-Criasionais/)
 
 ### Singleton

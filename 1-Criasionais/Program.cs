@@ -2,7 +2,8 @@
 using criacionais.Implementations.Singleton;
 
 //RunSingletonExample();
-RunFactoryMethod();
+//RunFactoryMethod();
+RunAbstractFactory();
 
 static void RunSingletonExample()
 {
@@ -19,8 +20,12 @@ static void RunFactoryMethod()
     const decimal amount = 135.29m;
     var defaultUserInstance = FeeCalculatorFactory.GetInstance(false);
     var premiumUserInstance = FeeCalculatorFactory.GetInstance(true);
-    
+
     Console.WriteLine($"Amount: {amount}");
     Console.WriteLine($"Default User: R${defaultUserInstance.Calculate(amount)}");
     Console.WriteLine($"Premium User: R${premiumUserInstance.Calculate(amount)}");
+}
+
+static void RunAbstractFactory()
+{
 }
