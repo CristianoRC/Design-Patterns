@@ -1,9 +1,10 @@
-﻿using criacionais.Implementations.FactoryMethod;
+﻿using criacionais.Implementations.Builder;
+using criacionais.Implementations.FactoryMethod;
 using criacionais.Implementations.Singleton;
 
 //RunSingletonExample();
 //RunFactoryMethod();
-RunAbstractFactory();
+RunBuilder();
 
 static void RunSingletonExample()
 {
@@ -26,6 +27,16 @@ static void RunFactoryMethod()
     Console.WriteLine($"Premium User: R${premiumUserInstance.Calculate(amount)}");
 }
 
-static void RunAbstractFactory()
+static void RunBuilder()
 {
+    var myItems = new[] {"Item 1", "Item 2", "Item 3", "Item 4"};
+    var htmlReportBuilder = new HtmlReportBuilder();
+    htmlReportBuilder
+        .AddHeader()
+        .AddSummary()
+        .AddItems(myItems);
+
+    var report = htmlReportBuilder.Build();
+    Console.WriteLine($"FileName: {report.Name}.{report.Extension}");
+    Console.WriteLine(report.Content);
 }
