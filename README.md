@@ -48,6 +48,8 @@ Esse é um dos mais legais quando se fala de criacionais. Seu papel é facilitar
 
 Um exemplo bem legal que a gente continuar no exemplo de relatório, é um gerador de relatório HTML de forma dinâmica usando código, onde dependendo dos dados, você monta de uma forma ou de outra.
 
+<img src="./images/builder.png" width="600px"/>
+
 Pensando no nosso exemplo, teríamos uma classe de reportBuilder, que você vai chamando os métodos, como o de Adiciar o header, Adicionar summary, adiciona transaçoes, adicionar quebra de linha... e depois de tudo configurado você vai chamar o método de build, que vai pegar tudo que você colocou em ordem, validar, e se estiver tudo correto vai retornar o nosso report!
 
 ### Prototype
