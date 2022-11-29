@@ -35,7 +35,6 @@ static void RunBuilder()
         .AddHeader()
         .AddSummary()
         .AddItems(myItems);
-
     var report = htmlReportBuilder.Build();
     Console.WriteLine($"FileName: {report.Name}.{report.Extension}");
     Console.WriteLine(report.Content);
