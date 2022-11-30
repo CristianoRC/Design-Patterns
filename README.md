@@ -54,6 +54,12 @@ Pensando no nosso exemplo, teríamos uma classe de reportBuilder, que você vai 
 
 ### Prototype
 
+Esse é um dos mais simples, seu papel é fazer o clone de um objeto de uma forma fácil, isso tudo emcapsulado dentro do próprio objeto, como um método de Clone, isso nos ajuda a não sair espalhando essa logica de como clonar o objeto de um lado para o outro.
+
+Um caso bem legal de prototype é a linguagem JavaScript, para forcener herança, ela faz p uso desse conceito, onde vai se fazendo um clone do objeto e adicionando novos conceitos nesse clone
+
+<img src="https://banisd.files.wordpress.com/2014/01/protochain1-e1389963022801.png?w=584" width="400px"/>
+
 ---
 
 ## Estruturais
