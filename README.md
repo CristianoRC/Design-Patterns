@@ -69,3 +69,10 @@ Um caso bem legal de prototype é a linguagem JavaScript, para forcener herança
 ## Comportamentais
 
 [Exemplos de código 🗂️](./3-Comportamentais/)
+
+### Strategy
+
+Padrão comportamental que tem como foco a facilitar a implementação de problemas onde você tem várias estratégias para resolver o mesmo problema. O exemplo clássico é o dos impostos, onde você tem uma calculadora de impostos, e vários impostos diferentes(estrategias diferentes)
+
+<img src="https://oowisdom.csse.canterbury.ac.nz/images/4/43/StrategyExampleTax.gif" width="700px"/>
+
