@@ -81,3 +81,5 @@ Padrão comportamental que tem como foco a facilitar a implementação de proble
 Ele serve basicamente como um orquestrador de commands/queries, ele faz com que quem envia o "evento" não precise conhecer quem processa, ele precisa conhecer apenas o _mediator_. Bom, na prática a gente pode até pensar que isso diminui o acoplamento, e sim, diminui o acoplamento estético, mas o acoplamento dinâmico continua lá! Não sei ao certo o que é pior, pois o acoplamento dinâmico geralmente você vai ver o problema só em tempo de execução.
 
 Claro, ele também tem suas partes boas, como poder criar pipelines em cima desses eventos, "melhorar" a quantidade de dependências que a sua classe tinha de conhecer vários outros serviços...
+
+<img src="./images/mediator.png" width="800px"/>
