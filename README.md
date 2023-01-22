@@ -91,3 +91,11 @@ Design Pattern Memento, funciona basicamente como um snapshot. Seu principal obj
 <img src="./images/memento.png" width="800px"/>
 
 De uma forma muito simplista, ele **pode** funcionar como `Ctrl+Z` e `Ctrl+y` no estado do seu objeto! Quando tu chamares o **Undo**, e vai voltar uma casa na nossa timeline, no caso da imagem voltaria para o **Memento 03**. E chamando o **ReUndo**, ele vai fazer o caminho contrário, como atualmente e está no **Memento 03** ele moveria o **Current Snapshot** novamente para o **Memento 04**.
+
+### Observable
+
+Um dos conceitos principais quando se fala de programação reativa. Seria muito custoso uma classe ficar toda hora perguntando para a outra se ela tem alguma atualização para mandar! E qual é a grande ideia que o observable resolve. Ele pede para todo mundo que quer saber quando ele for atualizado se inscrever nele, e quando ele tiver um novo vídeo ele notifica quem está na lista de inscritos.
+
+Incluve se não conhece meu canal no Youtube, se inscreve lá: [Cristiano Cunha](http://www.youtube.com/c/CristianoRaffiCunha)
+
+<img src="./images/observable.png" width="600px"/>™
