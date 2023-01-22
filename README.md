@@ -78,8 +78,16 @@ Padrão comportamental que tem como foco a facilitar a implementação de proble
 
 ### Mediator
 
-Ele serve basicamente como um orquestrador de commands/queries, ele faz com que quem envia o "evento" não precise conhecer quem processa, ele precisa conhecer apenas o _mediator_. Bom, na prática a gente pode até pensar que isso diminui o acoplamento, e sim, diminui o acoplamento estético, mas o acoplamento dinâmico continua lá! Não sei ao certo o que é pior, pois o acoplamento dinâmico geralmente você vai ver o problema só em tempo de execução.
+Ele serve basicamente como um orquestrador de commands/queries, ele faz com que quem envia o "evento" não precise conhecer quem processa, ele precisa conhecer apenas o _mediator_. Bom, na prática a gente pode até pensar que isso diminui o acoplamento, e sim, diminui o acoplamento estético, mas o acoplamento dinâmico continua lá! Não sei ao certo o que é pior, pois o acoplamento dinâmic22o geralmente você vai ver o problema só em tempo de execução.
 
 Claro, ele também tem suas partes boas, como poder criar pipelines em cima desses eventos, "melhorar" a quantidade de dependências que a sua classe tinha de conhecer vários outros serviços...
 
 <img src="./images/mediator.png" width="800px"/>
+
+### Memento - Snapshot
+
+Design Pattern Memento, funciona basicamente como um snapshot. Seu principal objetivo é poder navegar para frente e para trás na linha do tempo de um objeto, restaurando o seu estados! E o mais importante, isso deve ser feito sem o consumidor saber detalhes da implementação.
+
+<img src="./images/memento.png" width="800px"/>
+
+De uma forma muito simplista, ele **pode** funcionar como `Ctrl+Z` e `Ctrl+y` no estado do seu objeto! Quando tu chamares o **Undo**, e vai voltar uma casa na nossa timeline, no caso da imagem voltaria para o **Memento 03**. E chamando o **ReUndo**, ele vai fazer o caminho contrário, como atualmente e está no **Memento 03** ele moveria o **Current Snapshot** novamente para o **Memento 04**.
