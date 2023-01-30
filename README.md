@@ -98,4 +98,12 @@ Um dos conceitos principais quando se fala de programação reativa. Seria muito
 
 Incluve se não conhece meu canal no Youtube, se inscreve lá: [Cristiano Cunha](http://www.youtube.com/c/CristianoRaffiCunha)
 
-<img src="./images/observable.png" width="600px"/>™
+<img src="./images/observable.png" width="600px"/>
+
+### Specification Pattern
+
+Ter especificações, classificações, validações diferentes de uma entidade no seu código! Sendo fácil de testar, refatorar, e mudar, pois temos especificações separadas. Temos de especificação fora da nossa entidade, respeitando o princípio do Open Close Principle. Importante! Precisamos tomar cuidado para não deixar a nossa classe anêmica e colocar tudo em uma especificação. Se você não tem regras complexas e que não mudem muito, talvez não vale muito usar esse cara!
+
+Inclusive um outro ponto legal é que podemos usar specifications de forma conjunta, usando operadores lógicos (AND, OR, NOT...)
+
+Não é exatamente do mundo dos Design Patterns mais comuns, é um conceito que vem do DDD, mas vale muito a pena estudar sobre o Specification Pattern.
