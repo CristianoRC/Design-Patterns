@@ -66,6 +66,14 @@ Um caso bem legal de prototype é a linguagem JavaScript, para forcener herança
 
 [Exemplos de código 🗂️](./2-Estruturais/)
 
+
+### Flyweight
+
+Também conhecido como cache, ele tem como principal objetivo diminuir o uso de memória RAM, compartilhando pontos em comum entre várias instâncias de objetos. Contudo, em vários momentos você vai estar trocando menor uso de memória por complexidade e maior uso de CPU e/ou GPU, coloque sempre na balança antes de decidir. Um grande ponto a se levar em consideração é se você vai ter um grande número de objetos repetidos!
+
+<img src="https://reactiveprogramming.io/books/patterns/img/patterns/flyweight2.png" width="600px"/>
+
+
 ## Comportamentais
 
 [Exemplos de código 🗂️](./3-Comportamentais/)
