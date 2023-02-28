@@ -66,6 +66,19 @@ Um caso bem legal de prototype é a linguagem JavaScript, para forcener herança
 
 [Exemplos de código 🗂️](./2-Estruturais/)
 
+### Proxy
+
+Sua principal responsabilidade é o controle de acesso a seu serviço ou objeto. A ideia é poder uasr ele para resolver problemas como:
+
+- Loggin
+- Cache
+- Controle de acesso
+- Etc.
+
+E inclusive podemos usar uma cadeia de proxies até chegar no seu objeto, como por exmeplo, ter autenticação, autorização, cache e Logging! Sim, ele fica muito parecido com a ideia de Middleware, ainda estou estudando a fundo sobre os diferentes Design Patterns, mas, ainda não consegui identifcar qual a difereça entre esses dois, se souberes, abre um PR com a sua ideia!
+
+<img src="./images/proxy.png" width="900px"/>
+
 
 ### Flyweight
 
