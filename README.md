@@ -79,13 +79,11 @@ E inclusive podemos usar uma cadeia de proxies até chegar no seu objeto, como p
 
 <img src="./images/proxy.png" width="900px"/>
 
-
 ### Flyweight
 
 Também conhecido como cache, ele tem como principal objetivo diminuir o uso de memória RAM, compartilhando pontos em comum entre várias instâncias de objetos. Contudo, em vários momentos você vai estar trocando menor uso de memória por complexidade e maior uso de CPU e/ou GPU, coloque sempre na balança antes de decidir. Um grande ponto a se levar em consideração é se você vai ter um grande número de objetos repetidos!
 
 <img src="https://reactiveprogramming.io/books/patterns/img/patterns/flyweight2.png" width="600px"/>
-
 
 ## Comportamentais
 
@@ -112,6 +110,17 @@ Design Pattern Memento, funciona basicamente como um snapshot. Seu principal obj
 <img src="./images/memento.png" width="800px"/>
 
 De uma forma muito simplista, ele **pode** funcionar como `Ctrl+Z` e `Ctrl+y` no estado do seu objeto! Quando tu chamares o **Undo**, e vai voltar uma casa na nossa timeline, no caso da imagem voltaria para o **Memento 03**. E chamando o **ReUndo**, ele vai fazer o caminho contrário, como atualmente e está no **Memento 03** ele moveria o **Current Snapshot** novamente para o **Memento 04**.
+
+### Chain of Responsibility
+
+A grande ideia desse design pattern é controlar uma solicitação(chamada) que pode ser processada por mais de um manipulador, e ao invés de você ter um único controlar que gerencia a solicitação e tem vários "if", você separa em vários manipuladores, cada um com sua responsabilidade, inclusive de chamar o próximo se necessário. 
+
+Um exemplo, na prática, é onde você tem uma transação que para ser efetuada precisa de aprovações de mais de um passo/serviço.
+É muito importante tomar cuidado com a ordem dos "controladores", pois não adianta colocar na "corrente de chamadas" o envio do dinheiro primeiro e depois validar.
+
+<img src="./images/chain-of-responsibility.png" width="1000px"/>
+
+Sim, ele é muito parecido com o conceito de **middleware**, usado em vários frameworks web para tratamento de requisições web.
 
 ### Observable
 
