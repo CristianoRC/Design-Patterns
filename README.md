@@ -130,6 +130,16 @@ Incluve se não conhece meu canal no Youtube, se inscreve lá: [Cristiano Cunha]
 
 <img src="./images/observable.png" width="600px"/>
 
+
+### Decorator
+
+Uma das forma mais faceis de extender e adicionar comportamentos ao uma classe sem precisar alteralá. Um exemlo muito bom disso é em relação ao repository, teoricamente não é papel dele cuidar de cache das chamadas ou das queries!
+Então você pode ter uma implementação de cache, com os mesmos contratos da implementação real, e resolver esse problema; para facilitar ainda mais a vida se tu tiveres um contrato(interface) você pode fazer essa injeção direto no container de injeção de dependências.
+É claso, com toda essa magia você poderia adicionar de forma dinâmica essa "extensão".
+
+<img src="./images/decorator.png" width="700px"/>
+
+
 ### Specification Pattern
 
 Ter especificações, classificações, validações diferentes de uma entidade no seu código! Sendo fácil de testar, refatorar, e mudar, pois temos especificações separadas. Temos de especificação fora da nossa entidade, respeitando o princípio do Open Close Principle. Importante! Precisamos tomar cuidado para não deixar a nossa classe anêmica e colocar tudo em uma especificação. Se você não tem regras complexas e que não mudem muito, talvez não vale muito usar esse cara!
