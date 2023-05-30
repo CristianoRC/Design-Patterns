@@ -85,6 +85,14 @@ Também conhecido como cache, ele tem como principal objetivo diminuir o uso de 
 
 <img src="https://reactiveprogramming.io/books/patterns/img/patterns/flyweight2.png" width="600px"/>
 
+### Composite
+
+O grande objetivo deste padrão é conseguir organizar objetos e sub-objetos em uma estrutura de árvore. Um uso muito comum é quando você tem objetos muito complexos, como um cadastro de uma pessoa, onde você precisa colocar dados pessoais, documentos, pessoas da família, dentro dessas pessoas da família você pode ter mais dados e assim por diante.
+
+Um uso muito comum que vemos diariamente enquanto usamos computador é a nossa estrutura de diretórios e arquivos, a forma mais simples de navegar na estrutura e gerenciar tudo é fazendo o uso do composite.
+
+<img src="./images/composite.png" width="500px"/>
+
 ## Comportamentais
 
 [Exemplos de código 🗂️](./3-Comportamentais/)
@@ -113,7 +121,7 @@ De uma forma muito simplista, ele **pode** funcionar como `Ctrl+Z` e `Ctrl+y` no
 
 ### Chain of Responsibility
 
-A grande ideia desse design pattern é controlar uma solicitação(chamada) que pode ser processada por mais de um manipulador, e ao invés de você ter um único controlar que gerencia a solicitação e tem vários "if", você separa em vários manipuladores, cada um com sua responsabilidade, inclusive de chamar o próximo se necessário. 
+A grande ideia desse design pattern é controlar uma solicitação(chamada) que pode ser processada por mais de um manipulador, e ao invés de você ter um único controlar que gerencia a solicitação e tem vários "if", você separa em vários manipuladores, cada um com sua responsabilidade, inclusive de chamar o próximo se necessário.
 
 Um exemplo, na prática, é onde você tem uma transação que para ser efetuada precisa de aprovações de mais de um passo/serviço.
 É muito importante tomar cuidado com a ordem dos "controladores", pois não adianta colocar na "corrente de chamadas" o envio do dinheiro primeiro e depois validar.
@@ -130,7 +138,6 @@ Incluve se não conhece meu canal no Youtube, se inscreve lá: [Cristiano Cunha]
 
 <img src="./images/observable.png" width="600px"/>
 
-
 ### Decorator
 
 Uma das forma mais faceis de extender e adicionar comportamentos ao uma classe sem precisar alteralá. Um exemlo muito bom disso é em relação ao repository, teoricamente não é papel dele cuidar de cache das chamadas ou das queries!
@@ -138,7 +145,6 @@ Então você pode ter uma implementação de cache, com os mesmos contratos da i
 É claso, com toda essa magia você poderia adicionar de forma dinâmica essa "extensão".
 
 <img src="./images/decorator.png" width="700px"/>
-
 
 ### Specification Pattern
 
